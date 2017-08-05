@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.android.codecrusher.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/code_crusher_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Code Crusher"
+                android:textColor="#ff0000"
+                android:textSize="60sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can you crush the Code?"
+            android:textSize="24sp"
+            tools:textColor="#ff0000" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_description"
+            tools:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="Scroll Down"
+            android:textSize="24sp"
+            android:textColor="#FFF"
+            android:layout_marginBottom="72dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q1"
+            android:textColor="#ff00"
+            android:textSize="40sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/q1_a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++" />
+
+        <CheckBox
+            android:id="@+id/q1_a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java" />
+
+        <CheckBox
+            android:id="@+id/q1_a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q2"
+            android:textColor="#ff00"
+            android:textSize="40sp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="72dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_2"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q2_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectRadioButton"
+                android:text="ClassName object = ClassName;" />
+
+            <RadioButton
+                android:id="@+id/q2_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectRadioButton"
+                android:text="ClassName object = new ClassName();" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q3"
+            android:textColor="#ff00"
+            android:textSize="40sp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="72dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_3"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/q3_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q4"
+            android:textColor="#ff00"
+            android:textSize="40sp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="72dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_4"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/q4_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/scoreTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Final Score is: _/4"
+            android:textSize="24sp"
+            android:layout_marginTop="72dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitScore"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

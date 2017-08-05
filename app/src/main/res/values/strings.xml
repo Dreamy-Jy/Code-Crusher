@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Code Crusher</string>
+    <string name="app_description">
+        Code Crusher is a computer science Quiz designed to test even the toughest coders. This quiz focuses on mobile development, but future Quiz will test you on a variety of skills. Now can you Crush the Code?
+    </string>
+    <string name="question_1">
+        Which of these programming languages is used to make phone apps?
+    </string>
+    <string name="question_2">
+        Which is the right way to instantiate an object?
+    </string>
+    <string name="question_3">
+        In android this question would be considered a:
+    </string>
+    <string name="question_4">
+        Define, but do no instantiate, an integer named "jaxTax":
+    </string>
+</resources>
